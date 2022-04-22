@@ -6,32 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Document</title>
 </head>
-<script>
-  const a = {
-    b: {
-      c: {
-        d: 'xxx'
-      }
-    }
-  }
-  function get(obj, path, defaultValue) {
-    // todo
-    // if (res === path) {
-    //   return res;
-    // }
-    let p = path.split('.');
-    let ans;
-    for (let i = 0; i < p.length; i++) {
-      if (!obj[p[i]]) {
-        return defaultValue
-      } else {
-        obj = obj[p[i]];
-      }
-    }
-    return obj;
-  }
-  const result = get(a, 'b.c.d', 'default');
-  console.log(result)
+<script src="t.js">
+  // let obj = {
+  //   a: {
+  //     b: {
+  //       c: {
+  //         d: 123,
+  //         i: 789
+  //       }
+  //     },
+  //     g: {
+  //       h: 456
+  //     }
+  //   },
+  //   e: {
+  //     k: 10
+  //   }
+  // }
+  // // console.log(Object.values(obj)[0])
+
+
+  // function bt(obj, path, res) {
+  //   if (typeof obj !== 'object') {
+  //     res.push(path.join('.') + ':' + obj);
+  //     return;
+  //   }
+  //   for (let i in obj) {
+  //     path.push(i);
+  //     bt(obj[i], path, res);
+  //     path.pop();
+  //   }
+  // }
+
+  // function findPath(obj) {
+  //   let res = []
+  //   let path = []
+  //   bt(obj, path, res);
+  //   return res;
+  // }
+  // console.log(findPath(obj));
+
+  
 </script>
 <style>
 

@@ -1,27 +1,6 @@
 import React, { Component } from 'react'
 
 
-// function debounce(fn, wait) {
-//   let timer = null;
-//   let _this = this;
-//   let count = 0;
-//   return function () {
-//     timer && clearTimeout(timer);
-//     if (!count) {
-//       fn.apply(_this, arguments);
-//       timer = setTimeout(() => {
-//         count = 0;
-//       }, wait)
-//     } else {
-//       timer = setTimeout(() => {
-//         fn.apply(_this, arguments);
-//         count = 0;
-//       }, wait)
-//     }
-//     count++;
-//   }
-// }
-
 export default class App extends Component {
   state = {
     titleValue: '',
